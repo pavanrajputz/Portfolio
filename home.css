@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #242424;
+      position: absolute;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(91, 91, 91, 0.2);
+      padding: 10px 20px;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      margin: 0 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-family: "Montserrat", serif;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      
+      color: #444cf7;
+      transform: scale(1.1);
+    }
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: "Jersey 25", serif;
+    font-size: 150px;
+}
+
+.parallaxin{
+    padding: 10% 0;
+}
+ h1{
+    letter-spacing: 10px;
+    line-height: 125px;
+ }
+
+ .showcase{
+  display: flex;
+  background-color: #5b5b5b;
+  align-items: top;
+  justify-content: center;
+  min-height: 900px;
+  width: auto;
+  border-radius: 5px;
+ }
+
+ .project-text{
+  color: white;
+  font-family: "Montserrat", serif;
+  font-size: 50px;
+  margin-top: 5px;
+ }
+
+ .about{
+  height: 800px;
+  width: auto;
+  display: flex;
+  color: white;
+ }
+
+ .about h3{
+  font-family: "Montserrat", serif;
+  font-size: 80px;
+  align-items: top;
+  justify-content: flex-start;
+  margin-top: 100px;
+  margin-left: 100px;
+ }
+
+ .about img{
+  height: 500px;
+  margin-right: 100px;
+  margin-top: 120px;
+ }
+
+.about p{
+  margin-top: 10px;
+  margin-left: 100px;
+  float: left;
+  font-family: "Jaldi", serif;
+  font-size: 32;
+  letter-spacing: 3px;
+  line-height: 20px;
+}
+
+ .feedback{
+  margin-top: 3px;
+  border-radius: 5px;
+  height: 600px;
+  width: auto;
+  /* background-color: #5b5b5b; */
+  display: flex;
+  align-items: top;
+  justify-content: center;
+
+ }
+ 
+
+ .project-text{
+  transition: 0.3s;
+ }
+ .project-text:hover{
+  color: #444cf7;
+ }
+
+ .project-text::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.project-text:hover::after {
+  transform: scaleX(1);
+}
+
+ .rating-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 7px;
+}
+
+.rating-container input {
+  display: none;
+}
+
+.rating-container label {
+  font-size: 40px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Creates the hover effect for all stars up to the hovered one */
+.rating-container label:hover,
+.rating-container label:hover ~ label {
+  color: #0066ff;
+}
+
+/* Style for checked stars */
+.rating-container input:checked ~ label {
+  color: #0066ff;
+}
+
+.feedback-container {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  height: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feedback-title {
+  margin-bottom: 8px;
+  color: #333;
+  font-family: "Montserrat", serif;
+}
+
+ .contact{
+  margin-top: 3px;
+  border-radius: 5px;
+  height: 600px;
+  width: auto;
+  display: flex;
+  background-color: #5b5b5b;
+  
+ }
+
+ .contact h4{
+  font-family: "Jaldi", serif;
+  font-size: 40px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+ }
+
+.project-text {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  height: 50px;
+}
+
+
+     /* Responsive design */
+     @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar ul li {
+        margin: 10px 0;
+      }
+    }
+
