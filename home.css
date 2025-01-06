@@ -125,10 +125,15 @@ h1{
 
  }
  
-
- .project-text{
+ .project-text {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  height: 50px;
   transition: 0.3s;
- }
+}
+
  .project-text:hover{
   color: #444cf7;
  }
@@ -194,15 +199,20 @@ h1{
   color: #333;
   font-family: "Montserrat", serif;
 }
-
- .contact{
+ 
+ footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #5b5b5b;
   margin-top: 3px;
   border-radius: 5px;
   height: 600px;
   width: auto;
+ }
+
+ .contact{
   display: flex;
-  background-color: #5b5b5b;
-  
+  flex-direction: column;
  }
 
  .contact h4{
@@ -210,16 +220,47 @@ h1{
   font-size: 40px;
   color: white;
   margin-top: 20px;
+  margin-left: 30px;
+ }
+
+ .box{
+  height: 400px;
+  width: 60vw; 
+  background-color: #2e2e2e;
+  text-align: center;
+  border-radius: 10px;
+  font-size: medium;
+  margin-left: 30px;
+  color: white;
+ }
+
+ .msgbtn{
+  background-color: #444cf7;
+  width: 60vw;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 10px;
+  font-family: "Jaldi", serif;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-align: center;
+ }
+
+ .details{
+  height: 300px;
+  width: 35vw;
+  background-color: #2e2e2e;
+  margin-top: 87px;
+  border-radius: 10px;
   margin-left: 20px;
  }
 
-.project-text {
-  position: relative;
-  display: inline-block;
-  color: #ffffff;
-  text-decoration: none;
-  height: 50px;
-}
+ .details i{
+  font-size: 40px;
+  color: white;
+ }
 
 
      /* Responsive design */
