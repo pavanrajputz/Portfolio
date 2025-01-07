@@ -280,7 +280,7 @@ h1{
     /*project container and project box desigining*/
 
     .pro-text{
-      border: 5px solid white;
+     
       height: auto;
       padding:0.5rem 0 2rem;
       text-align: center;
@@ -288,7 +288,7 @@ h1{
     .project-container{
       width: 100%;
       flex-grow: 1;
-      border: 5px solid red;
+     
       display: grid;
       grid-template-columns: 1fr 1fr 1fr ;
       padding: 2rem 4rem;
@@ -301,11 +301,12 @@ h1{
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out  ;
     
   }
   .project-box:hover{
     transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   }
 
   .pro-box1{
