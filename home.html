@@ -126,13 +126,22 @@
 
   <!-- Contact section  -->
 
+
   <footer>
-    <div class="contact">
-      <h4>Connect</h4>
-      <div class="message">
-        <input class="box" type="text" placeholder="Type your thoughts.....">
+    <div class="contact-container">
+      <form class="contact-left">
+        <div class="contact-title">
+          <h2>Connect</h2>
+          <hr>
+        </div>
+        <input type="text" name="name" placeholder="Enter your name" class="contact-input" required>
+        <input type="email" name="email" placeholder="Enter your email" class="contact-input" required>
+        <textarea name="message" placeholder="Your message" class="contact-input" required></textarea>
+        <button type="submit">submit</button>
+      </form>
+      <div class="contact-right">
+        
       </div>
-      <button class="msgbtn">Submit</button>
     </div>
     <div class="details">
       <i class="fa-brands fa-linkedin-in"></i>
