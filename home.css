@@ -22,8 +22,8 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
-  background-color: rgba(91, 91, 91, 0.2);
-  padding: 10px 20px;
+  padding: 20px 20px;
+  position: sticky;
 }
 
 .navbar ul {
@@ -76,9 +76,15 @@ h1 {
   flex-direction: column;
 }
 
+.pro-text {
+  height: auto;
+  padding: 0.5rem 0.2rem;
+  text-align: center;
+}
 
 .project-text {
   font-family: "Montserrat", serif;
+  font-weight: 600;
   font-size: 50px;
   position: relative;
   display: inline-block;
@@ -96,8 +102,8 @@ h1 {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
-  bottom: -2px;
+  height: 3.5px;
+  bottom: -3.5px;
   left: 0;
   background-color: #ffffff;
   transform: scaleX(0);
@@ -110,17 +116,9 @@ h1 {
 
 /*project container and project box desigining*/
 
-.pro-text {
-
-  height: auto;
-  padding: 0.5rem 0 2rem;
-  text-align: center;
-}
-
 .project-container {
   width: 100%;
   flex-grow: 1;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 2rem 4rem;
@@ -128,7 +126,6 @@ h1 {
 }
 
 .project-box {
-
   height: 450px;
   border-radius: 1rem;
   display: flex;
@@ -144,7 +141,6 @@ h1 {
 }
 
 .pro-box1 {
-
   background: #f8f9fa;
 }
 
@@ -154,13 +150,35 @@ h1 {
 
 .img-container {
   height: 120px;
-  width: 100%;
+  width: 30%;
+}
+
+.img-container img{
+  width: 120px;
+  margin-left: -11px;
 }
 
 .msg-container {
   width: 100%;
   flex: 1;
+}
 
+.pro-box1 p{
+  font-family: "Jaldi", serif;
+  font-size: 32;
+  letter-spacing: 1.7px;
+  line-height: 17px;
+  margin-top: 18px;
+  color: #212529;
+}
+
+.pro-box2 p{
+  font-family: "Jaldi", serif;
+  font-size: 32;
+  letter-spacing: 1.7px;
+  line-height: 17px;
+  margin-top: 18px;
+  color: #ffffff;
 }
 
 .msg-container a {
@@ -173,7 +191,7 @@ h1 {
 
 .msg-container a::after {
   content: ' ';
-  width: 10%;
+  width: 0%;
   height: 3px;
   background: #343a40;
   position: absolute;
@@ -189,7 +207,6 @@ h1 {
 
 .pro-box2 .msg-container a {
   color: #f8f9fa;
-
 }
 
 .pro-box2 .msg-container a::after {
@@ -314,7 +331,7 @@ footer {
 
 .contact-title h2{
   font-family: "Montserrat", serif;
-  font-weight: 600;
+  font-weight: 700;
   color: #f3f2f3;
   font-size: 40px;
   margin-bottom: 5px;
@@ -361,9 +378,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   padding: 5px 10px;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
   font-size: 20px;
-  color: #fff;
   gap: 5px;
   border: none;
   border-radius: 5px;
@@ -373,13 +392,25 @@ footer {
   box-shadow: 0 10px 20px #65696d(0, 0, 0, 0.1);
 }
 
+.contact-left button::after{
+  content: '';
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+
+}
+
 .clicks{
   display: flex;
   flex-direction: row;
 }
 
 .icons{
-  margin-left: 320px;
+  margin-left: 300px;
 }
 
 #linkedin{
@@ -395,10 +426,15 @@ footer {
   font-size: 35px;
   margin-left: 15px;
   margin-top: 5px;
+  transition: 1s;
 }
 
 #linkedin:hover{
   color: #0A66C2;
+}
+
+#insta:hover{
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 /* Responsive design */
