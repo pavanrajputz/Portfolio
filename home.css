@@ -66,12 +66,14 @@ h1{
 
  .showcase{
   display: flex;
-  background-color: #5b5b5b;
-  align-items: top;
-  justify-content: center;
+  /* background-color: #5b5b5b; */
+  background-color: #adb5bd;
+  /* align-items: top;
+  justify-content: center; */
   min-height: 900px;
   width: auto;
   border-radius: 5px;
+  flex-direction: column;
  }
 
  .project-text{
@@ -274,4 +276,81 @@ h1{
         margin: 10px 0;
       }
     }
+
+    /*project container and project box desigining*/
+
+    .pro-text{
+     
+      height: auto;
+      padding:0.5rem 0 2rem;
+      text-align: center;
+    }
+    .project-container{
+      width: 100%;
+      flex-grow: 1;
+     
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      padding: 2rem 4rem;
+      grid-gap: 40px;
+    }
+  .project-box{
+    
+    height: 450px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out  ;
+    
+  }
+  .project-box:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .pro-box1{
+
+    background: #f8f9fa;
+  }
+  .pro-box2{
+    background: #212529;
+  }
+  .img-container{
+    height: 120px;
+    width: 100%;
+  }
+  .msg-container{
+    width: 100%;
+    flex: 1;
+    
+  }
+  .msg-container a{
+    color: #212529;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+.msg-container a::after{
+    content: ' ';
+    width: 10%;
+    height: 3px;
+    background: #343a40;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+.msg-container:hover a::after{
+  width: 100%;
+}
+.pro-box2 .msg-container a{
+  color: #f8f9fa;
+
+}
+.pro-box2 .msg-container a::after{
+  background:#f8f9fa;
+}
 
