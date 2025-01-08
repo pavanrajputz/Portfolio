@@ -290,9 +290,8 @@ h1 {
 footer {
   display: flex;
   flex-direction: row;
-  background-color: #5b5b5b;
+  background-color: #adb5bd;
   margin-top: 3px;
-  border-radius: 5px;
   height: 600px;
   width: auto;
 }
@@ -310,14 +309,16 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 20px;
+  gap: 10px;
 }
 
 .contact-title h2{
+  font-family: "Montserrat", serif;
   font-weight: 600;
   color: #f3f2f3;
   font-size: 40px;
   margin-bottom: 5px;
+  /* text-shadow: #777c81; */
 }
 
 .contact-left-title hr{
@@ -335,19 +336,21 @@ footer {
   border: none;
   outline: none;
   padding-left: 25px;
-  font-weight: 500;
   color: #666;
-  border-radius: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #65696d(0, 0, 0, 0.1);
 }
 
 .contact-left textarea{
-  height: 140px;
+  width: 500px;
+  height: 200px;
   padding-top: 15px;
-  border-radius: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #65696d(0, 0, 0, 1);
 }
 
 .contact-input:focus{
-  border: 2px solid #ff994f;
+  border: 2px solid #444cf7;
 }
 
 .contact-input::placeholder{
@@ -357,68 +360,46 @@ footer {
 .contact-left button{
   display: flex;
   align-items: center;
-  padding: 15px 30px;
-  font-size: 16px;
+  justify-content: center;
+  padding: 5px 10px;
+  font-size: 20px;
   color: #fff;
-  gap: 10px;
+  gap: 5px;
   border: none;
-  border-radius: 50px;
-  background-color: aqua;
-  cursor: pointer;
-}
-
- /*.contact {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact h4 {
-  font-family: "Jaldi", serif;
-  font-size: 40px;
-  color: white;
-  margin-top: 20px;
-  margin-left: 30px;
-}
-
-.box {
-  height: 400px;
-  width: 60vw;
-  background-color: #2e2e2e;
-  text-align: center;
-  border-radius: 10px;
-  font-size: medium;
-  margin-left: 30px;
-  color: white;
-}
-
-.msgbtn {
+  border-radius: 5px;
   background-color: #444cf7;
-  width: 60vw;
-  height: 40px;
-  margin-top: 10px;
-  margin-left: 30px;
-  border-radius: 10px;
-  font-family: "Jaldi", serif;
+  cursor: pointer;
   color: white;
-  font-size: 25px;
-  letter-spacing: 1px;
-  text-align: center;
-} */
-
-.details {
-  height: 280px;
-  width: 35vw;
-  background-color: #2e2e2e;
-  margin-top: 160px;
-  border-radius: 20px;
-  margin-left: 20px;
+  box-shadow: 0 10px 20px #65696d(0, 0, 0, 0.1);
 }
 
-.details i {
-  font-size: 40px;
-  color: white;
+.clicks{
+  display: flex;
+  flex-direction: row;
 }
 
+.icons{
+  margin-left: 320px;
+}
+
+#linkedin{
+  color: white;
+  font-size: 35px;
+  margin-left: 15px;
+  margin-top: 3px;
+  transition: 0.4s;
+}
+
+#insta{
+  color: white;
+  font-size: 35px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+#linkedin:hover{
+  color: #0A66C2;
+}
 
 /* Responsive design */
 @media (max-width: 768px) {
