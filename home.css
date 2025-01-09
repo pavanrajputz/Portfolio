@@ -47,7 +47,7 @@ body {
 
 .navbar ul li a:hover {
 
-  color: #444cf7;
+  color: #0066ff;
   transform: scale(1.1);
 }
 
@@ -364,7 +364,7 @@ footer {
   gap: 10px;
 }
 
-.contact-title h2{
+.contact-left h2{
   font-family: "Montserrat", serif;
   font-weight: 700;
   color: #f3f2f3;
@@ -373,24 +373,15 @@ footer {
   /* text-shadow: #777c81; */
 }
 
-.contact-left-title hr{
-  border: none;
-  width: 120px;
-  height: 5px;
-  background-color: #a363aa;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
 .contact-input{
   width: 500px;
   height: 50px;
   border: none;
-  outline: none;
   padding-left: 25px;
   color: #666;
   border-radius: 10px;
   box-shadow: 0 10px 20px #65696d(0, 0, 0, 0.1);
+  transition: all 0.3s;
 }
 
 .contact-left textarea{
@@ -401,15 +392,19 @@ footer {
   box-shadow: 0 10px 20px #65696d(0, 0, 0, 1);
 }
 
-.contact-input:focus{
-  border: 2px solid #444cf7;
-}
-
 .contact-input::placeholder{
   color: #a9a9a9;
 }
 
-.btn-donate {
+.contact-input:hover,
+.contact-input:focus {
+  border: 2px solid #0066ff;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+
+.btn{
   --clr-font-main: hsla(0 0% 20% / 100);
   --btn-bg-1: hsla(194 100% 69% / 1);
   --btn-bg-2: hsla(217 100% 56% / 1);
@@ -439,11 +434,11 @@ footer {
     inset -4px -4px 8px rgba(19, 95, 216, 0.35);
 }
 
-.btn-donate:hover {
+.btn:hover {
   background-position: right top;
 }
 
-.btn-donate:is(:focus, :focus-visible, :active) {
+.btn:is(:focus, :focus-visible, :active) {
   outline: none;
   box-shadow:
     0 0 0 3px var(--btn-bg-color),
@@ -451,43 +446,9 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .btn-donate {
+  .btn {
     transition: linear;
   }
-}
-
-
-.clicks{
-  display: flex;
-  flex-direction: row;
-}
-
-.icons{
-  margin-left: 280px;
-}
-
-#linkedin{
-  color: white;
-  font-size: 35px;
-  margin-left: 15px;
-  margin-top: 3px;
-  transition: 0.4s;
-}
-
-#insta{
-  color: white;
-  font-size: 35px;
-  margin-left: 15px;
-  margin-top: 5px;
-  transition: 1s;
-}
-
-#linkedin:hover{
-  color: #0A66C2;
-}
-
-#insta:hover{
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 /* Responsive design */
