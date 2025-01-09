@@ -377,6 +377,7 @@ footer {
   width: 500px;
   height: 50px;
   border: none;
+  outline: none;
   padding-left: 25px;
   color: #666;
   border-radius: 10px;
@@ -398,9 +399,8 @@ footer {
 
 .contact-input:hover,
 .contact-input:focus {
-  border: 2px solid #0066ff;
+  outline: 1px solid #0066ff;
   box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
-  background-color: white;
 }
 
 
