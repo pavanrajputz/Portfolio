@@ -88,14 +88,10 @@ h1 {
   font-size: 50px;
   position: relative;
   display: inline-block;
-  color: #ffffff;
+  color: #212529;
   text-decoration: none;
   height: 50px;
   transition: 0.3s;
-}
-
-.project-text:hover {
-  color: #444cf7;
 }
 
 .project-text::after {
@@ -105,7 +101,7 @@ h1 {
   height: 3.5px;
   bottom: -3.5px;
   left: 0;
-  background-color: #ffffff;
+  background-color: #212529;
   transform: scaleX(0);
   transition: transform 0.3s;
 }
@@ -262,7 +258,7 @@ h1 {
 
 .about h3 {
   font-family: "Montserrat", serif;
-  font-size: 80px;
+  font-size: 65px;
   align-items: top;
   justify-content: flex-start;
   margin-top: 100px;
@@ -413,35 +409,53 @@ footer {
   color: #a9a9a9;
 }
 
-.contact-left button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 5px 10px;
-  font-family: "Montserrat", serif;
-  font-weight: 600;
-  font-size: 20px;
-  gap: 5px;
-  border: none;
-  border-radius: 5px;
-  background-color: #444cf7;
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
   cursor: pointer;
-  color: white;
-  box-shadow: 0 10px 20px #65696d(0, 0, 0, 0.1);
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 700;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
 }
 
-.contact-left button::after{
-  content: '';
-  background: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-
+.btn-donate:hover {
+  background-position: right top;
 }
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+
 
 .clicks{
   display: flex;
@@ -449,7 +463,7 @@ footer {
 }
 
 .icons{
-  margin-left: 300px;
+  margin-left: 280px;
 }
 
 #linkedin{
