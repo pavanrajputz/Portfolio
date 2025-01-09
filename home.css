@@ -12,7 +12,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #242424;
+  background-color: #2b2a2a;
   position: absolute;
 }
 .sticky{
@@ -55,7 +55,7 @@ body {
 
 .navbar ul li a:hover {
 
-  color: #444cf7;
+  color: #0066ff;
   transform: scale(1.1);
 }
 
@@ -329,16 +329,17 @@ body {
 
 /* reviews section starts here  */
 
-.feedback {
+.feedback-container {
   margin-top: 3px;
   height: 600px;
   width: auto;
   display: flex;
+  flex-direction: column;
   align-items: top;
   justify-content: center;
 }
 
-.feedback-container {
+.rating-box {
   text-align: center;
   background-color: #f5f5f5;
   padding: 30px;
@@ -349,24 +350,24 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.feedback-title {
+.rating-box h2{
   margin-bottom: 8px;
   color: #333;
   font-family: "Montserrat", serif;
 }
 
-.rating-container {
+.stars {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   padding: 7px;
 }
 
-.rating-container input {
+.stars input {
   display: none;
 }
 
-.rating-container label {
+.stars label {
   font-size: 40px;
   color: #ddd;
   cursor: pointer;
@@ -374,14 +375,74 @@ body {
 }
 
 /* Creates the hover effect for all stars up to the hovered one */
-.rating-container label:hover,
-.rating-container label:hover~label {
+.stars label:hover,
+.stars label:hover~label {
   color: #0066ff;
 }
 
 /* Style for checked stars */
-.rating-container input:checked~label {
+.stars input:checked~label {
   color: #0066ff;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  height: 90px;
+  margin-top: 70px;
+  margin-left: 100px;
+  background: #353535;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background: linear-gradient(#d7cfcf, #9198e5);
+}
+
+.card:hover > .img {
+  transition: 0.5s ease-in-out;
+  background: linear-gradient(#9198e5, #712020);
+}
+
+.textBox {
+  width: calc(100% - 105px);
+  margin-left: 15px;
+  color: white;
+  font-family: 'Poppins' sans-serif;
+}
+
+.textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.span {
+  font-size: 14px;
+}
+
+.h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.p {
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 footer {
@@ -410,22 +471,13 @@ footer {
   gap: 10px;
 }
 
-.contact-title h2{
+.contact-left h2{
   font-family: "Montserrat", serif;
   font-weight: 700;
   color: #f3f2f3;
   font-size: 40px;
   margin-bottom: 5px;
   /* text-shadow: #777c81; */
-}
-
-.contact-left-title hr{
-  border: none;
-  width: 120px;
-  height: 5px;
-  background-color: #a363aa;
-  border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .contact-input{
@@ -437,6 +489,7 @@ footer {
   color: #666;
   border-radius: 10px;
   box-shadow: 0 10px 20px #65696d(0, 0, 0, 0.1);
+  transition: all 0.3s;
 }
 
 .contact-left textarea{
@@ -447,15 +500,18 @@ footer {
   box-shadow: 0 10px 20px #65696d(0, 0, 0, 1);
 }
 
-.contact-input:focus{
-  border: 2px solid #444cf7;
-}
-
 .contact-input::placeholder{
   color: #a9a9a9;
 }
 
-.btn-donate {
+.contact-input:hover,
+.contact-input:focus {
+  outline: 1px solid #0066ff;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+}
+
+
+.btn{
   --clr-font-main: hsla(0 0% 20% / 100);
   --btn-bg-1: hsla(194 100% 69% / 1);
   --btn-bg-2: hsla(217 100% 56% / 1);
@@ -485,11 +541,11 @@ footer {
     inset -4px -4px 8px rgba(19, 95, 216, 0.35);
 }
 
-.btn-donate:hover {
+.btn:hover {
   background-position: right top;
 }
 
-.btn-donate:is(:focus, :focus-visible, :active) {
+.btn:is(:focus, :focus-visible, :active) {
   outline: none;
   box-shadow:
     0 0 0 3px var(--btn-bg-color),
@@ -497,43 +553,9 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .btn-donate {
+  .btn {
     transition: linear;
   }
-}
-
-
-.clicks{
-  display: flex;
-  flex-direction: row;
-}
-
-.icons{
-  margin-left: 280px;
-}
-
-#linkedin{
-  color: white;
-  font-size: 35px;
-  margin-left: 15px;
-  margin-top: 3px;
-  transition: 0.4s;
-}
-
-#insta{
-  color: white;
-  font-size: 35px;
-  margin-left: 15px;
-  margin-top: 5px;
-  transition: 1s;
-}
-
-#linkedin:hover{
-  color: #0A66C2;
-}
-
-#insta:hover{
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 /* Responsive design */
