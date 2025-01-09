@@ -157,10 +157,14 @@ h1 {
   width: 120px;
   margin-left: -11px;
 }
+.img-container img{
+  height: 100%;
+}
 
 .msg-container {
   width: 100%;
   flex: 1;
+  position: relative;
 }
 
 .pro-box1 p{
@@ -184,7 +188,7 @@ h1 {
 .msg-container a {
   color: #212529;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   position: relative;
 }
@@ -212,7 +216,41 @@ h1 {
 .pro-box2 .msg-container a::after {
   background: #f8f9fa;
 }
+.overlay p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  /* transition: font-size 0.3s ease, color 0.3s ease; */
+  color: #212529;
+}
+.msg-container .overlay{
+  height:70% ;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 0;
+  bottom: 0;
 
+  /* background: linear-gradient(transparent, #1c1c1c 99%); */
+  text-align: center;
+  transition: height 0.5s;
+
+}
+.msg-container:hover .overlay{
+  height: 100%;
+}
+.msg-container:hover .overlay p{
+  font-size: 1.3rem;
+  font-weight: 350;
+  transition: height 0.5s;
+}
+
+.pro-box2 .msg-container .overlay p{
+  color: white;
+}
 /* about description sections starts here  */
 
 .about {
@@ -312,6 +350,7 @@ footer {
   height: 600px;
   width: auto;
 }
+
 /* contact section */
 
 .contact-container{
