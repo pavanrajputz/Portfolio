@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -23,12 +24,12 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
-  padding: 20px 20px;
+  padding: 15px 20px;
   position: fixed;
   top:0;
   left: 0;
   width: 100%;
-  transition: 0.6s;   
+  transition: 0.3s;   
   z-index: 100;    
 }
 
@@ -69,12 +70,12 @@ body {
   justify-content: center; */
   /* background-image: url(web-desigen-development.png); */
   /* From Uiverse.io by csemszepp */ 
+  background-size: cover;
 
 }
 .right-parallaxin{
   height: 100%;
   width:35vw;
-  /* border: 2px solid red; */
 }
 .right-parallaxin img{
   width: 100%;
@@ -85,7 +86,6 @@ body {
   height: 100%;
   flex-grow: 1;
   padding-left: 100px;
-  /* border: 2px solid red; */
 }
 .left-parallaxin p{
   font-size: 1.5rem;
@@ -332,17 +332,18 @@ body {
 
 .feedback-container {
   margin-top: 3px;
-  height: 600px;
+  height: 800px;
   width: auto;
   display: flex;
   flex-direction: column;
   align-items: top;
   justify-content: center;
+  background-color: #adb5bd;
 }
 
 .rating-box {
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 10px;
   max-width: 400px;
@@ -386,11 +387,16 @@ body {
   color: #0066ff;
 }
 
-.card {
+.cards{
+  display: flex;
+  flex-direction: row;
+}
+
+.card-1 {
   width: 100%;
   max-width: 380px;
   height: 90px;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-left: 100px;
   background: #353535;
   border-radius: 20px;
@@ -401,32 +407,26 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.card:hover {
+.card-1:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
 
-.img {
+.card-1 img{
   width: 60px;
   height: 60px;
   margin-left: 10px;
   border-radius: 10px;
-  background: linear-gradient(#d7cfcf, #9198e5);
 }
 
-.card:hover > .img {
-  transition: 0.5s ease-in-out;
-  background: linear-gradient(#9198e5, #712020);
-}
-
-.textBox {
+.textBox-1 {
   width: calc(100% - 105px);
   margin-left: 15px;
   color: white;
-  font-family: 'Poppins' sans-serif;
+  font-family: "Montserrat", serif;
 }
 
-.textContent {
+.textContent-1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -438,7 +438,7 @@ body {
 
 .h1 {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .p {
@@ -461,9 +461,11 @@ footer {
   height: 600px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 50px 100px;
 }
+
+/* contact left section  */
 
 .contact-left{
   display: flex;
@@ -478,7 +480,6 @@ footer {
   color: #f3f2f3;
   font-size: 40px;
   margin-bottom: 5px;
-  /* text-shadow: #777c81; */
 }
 
 .contact-input{
@@ -551,6 +552,68 @@ footer {
   box-shadow:
     0 0 0 3px var(--btn-bg-color),
     0 0 0 6px var(--btn-bg-2);
+}
+
+/* contact right section  */
+
+.contact-right{
+  color: white;
+  max-width: 1000px;
+  height: 350px;
+  margin-top: 40px;
+}
+
+.contact-right p{
+  text-align: justify;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.contact-right span{
+  display: inline-block;
+  margin-top: 16px;
+  font-family: "Montserrat", serif;
+  font-weight: lighter;
+  font-size: 13px;
+  width: 1000px;
+  text-align: right;
+}
+
+/* all icons  */
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#linkin{
+  font-size: 40px;
+  color: white;
+  transition: 0.5s;
+}
+
+#insta{
+  font-size: 38px;
+  margin-left: 20px;
+  margin-top: 1px;
+  color: white;
+}
+
+#linkin:hover{
+  color: #0A66C2;
+}
+
+#insta:hover{
+  background: linear-gradient(45deg, 
+  #f09433 0%, 
+  #e6683c 25%, 
+  #dc2743 50%, 
+  #cc2366 75%, 
+  #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (prefers-reduced-motion: reduce) {
