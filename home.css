@@ -596,6 +596,7 @@ footer {
   margin-left: 20px;
   margin-top: 1px;
   color: white;
+  transition: 0.5s;
 
   &:hover{
     background: linear-gradient(45deg, 
@@ -606,6 +607,17 @@ footer {
     #bc1888 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+#github{
+  font-size: 39px;
+  margin-left: 20px;
+  color: white;
+  transition: 0.5s;
+
+  &:hover{
+    color: #000000;
   }
 }
 
