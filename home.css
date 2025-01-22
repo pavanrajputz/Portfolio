@@ -591,6 +591,28 @@ footer {
   }
 }
 
+#twitter{
+  font-size: 39px;
+  margin-left: 20px;
+  color: white;
+  transition: 0.5s;
+
+  &:hover{
+    color: #000000;
+  }
+}
+
+#github{
+  font-size: 39px;
+  margin-left: 20px;
+  color: white;
+  transition: 0.5s;
+
+  &:hover{
+    color: #000000;
+  }
+}
+
 #insta{
   font-size: 38px;
   margin-left: 20px;
@@ -609,18 +631,6 @@ footer {
     -webkit-text-fill-color: transparent;
   }
 }
-
-#github{
-  font-size: 39px;
-  margin-left: 20px;
-  color: white;
-  transition: 0.5s;
-
-  &:hover{
-    color: #000000;
-  }
-}
-
 
 @media (prefers-reduced-motion: reduce) {
   .btn {
