@@ -61,55 +61,11 @@ body {
 
 /* hero section starts here  */
 
-.parallaxin {
-  height: 90vh;
-  padding: 10px 0;
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  /* background-image: url(web-desigen-development.png); */
-  /* From Uiverse.io by csemszepp */ 
-  background-size: cover;
+.hero{
+  height: 800px;
+  width: 100vw;
+}
 
-}
-.right-parallaxin{
-  height: 100%;
-  width:35vw;
-}
-.right-parallaxin img{
-  width: 100%;
-  height: 100%;
-}
-.left-parallaxin{
-  padding-top: 12vh;
-  height: 100%;
-  flex-grow: 1;
-  padding-left: 100px;
-}
-.left-parallaxin p{
-  font-size: 1.5rem;
-  padding: 50px;
-  color: white;
-  line-height:35px;
-  text-align: center;
-}
-.left-parallaxin h1 {
-  color: white;
-  text-align: center;
-  font-family: "Jersey 25", serif;
-  font-size: 4rem;
-  letter-spacing: 5px;
-}
-.left-parallaxin h2 {
-  color: white;
-  text-align: center;
-  font-family:  serif;
-  font-size: 3.5rem;
-  letter-spacing: 5px;
-}
-.left-parallaxin h2 span{
-  color: red;
-}
 
 /* Showcase section starts here  */
 
@@ -295,23 +251,38 @@ body {
 
 .about {
   height: 800px;
-  width: auto;
+  width: 100vw;
   display: flex;
   color: white;
 }
 
-.about h3 {
+.summary{
+  margin-right: 25px;
+  width: 700vw;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 3vw;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px, solid, rgba(255, 255, 255, 0.18);
+}
+
+.summary h3 {
+  padding-top: 20px;
+  padding-left: 20px;
   font-family: "Montserrat", serif;
   font-size: 65px;
   align-items: top;
   justify-content: flex-start;
-  margin-top: 100px;
-  margin-left: 100px;
 }
 
-.about p {
-  margin-top: 10px;
-  margin-left: 100px;
+.summary p {
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: justify;
+  margin-top: 30px;
   float: left;
   font-family: "Jaldi", serif;
   font-size: 32;
@@ -320,9 +291,11 @@ body {
 }
 
 .about img {
+  width: 30vw;
   height: 500px;
-  margin-right: 100px;
-  margin-top: 120px;
+  margin-right: 3vw;
+  margin-top: 85px;
+  filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.37));
 }
 
 /* reviews section starts here  */
@@ -583,12 +556,17 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 30px;
 }
 
 #linkin{
   font-size: 40px;
   color: white;
-  transition: 0.5s;
+  transition: 0.4s;
+
+  &:hover{
+    color: #0A66C2;
+  }
 }
 
 #insta{
@@ -596,13 +574,8 @@ footer {
   margin-left: 20px;
   margin-top: 1px;
   color: white;
-}
 
-#linkin:hover{
-  color: #0A66C2;
-}
-
-#insta:hover{
+  &:hover{
   background: linear-gradient(45deg, 
   #f09433 0%, 
   #e6683c 25%, 
@@ -612,7 +585,31 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  }
 }
+
+#twitter{
+  font-size: 40px;
+  margin-left: 20px;
+  color: white;
+  transition: 0.4s;
+
+  &:hover{
+    color: black;
+  }
+}
+
+#github{
+  font-size: 40px;
+  margin-left: 20px;
+  color: white;
+  transition: 0.4s;
+
+  &:hover{
+    color: black;
+  }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .btn {
