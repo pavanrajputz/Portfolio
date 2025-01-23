@@ -305,7 +305,7 @@ body {
 .feedback-container {
   margin-top: 3px;
   height: 800px;
-  width: auto;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: top;
@@ -315,27 +315,158 @@ body {
 
 .rating-box {
   text-align: center;
-  background-color: rgba(255, 255, 255);
   padding: 30px;
   border-radius: 10px;
   max-width: 400px;
   margin: 20px auto;
-  height: 150px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  height: 163px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px, solid, rgba(255, 255, 255, 0.18);
+  box-shadow: 5px, 10px;
 }
 
 .rating-box h2{
-  margin-bottom: 8px;
-  color: #333;
+  margin-bottom: 30px;
+  color: white;
   font-family: "Montserrat", serif;
 }
+
+
+/* stars animation  */
+
 
 .stars {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  padding: 7px;
+  gap: 10px;
 }
+
+.stars > input {
+  position: absolute;
+  appearance: none;
+}
+
+.stars > label {
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.stars > label > svg {
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.stars > label::before,
+.stars > label::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #ff9e0b;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+  animation: particle-explosion 1s ease-out;
+}
+
+.stars > label::before {
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+}
+
+.stars > label::after {
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+}
+
+.stars > label:hover::before,
+.stars > label:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.5);
+}
+
+.stars > label:hover {
+  transform: scale(1.2);
+  animation: pulse 0.6s infinite alternate;
+}
+
+/* Star glow and animation on hover */
+.stars > label:hover > svg {
+  fill: #ff9e0b;
+  filter: drop-shadow(0 0 15px rgba(255, 158, 11, 0.9));
+  animation: shimmer 1s ease infinite alternate;
+}
+
+.stars > input:checked + label > svg {
+  fill: #ff9e0b;
+  filter: drop-shadow(0 0 15px rgba(255, 158, 11, 0.9));
+  animation: pulse 0.8s infinite alternate;
+}
+
+.stars > input:checked + label ~ label > svg,
+.stars > input:checked + label > svg {
+  fill: #ff9e0b; /* Highlight the stars */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes particle-explosion {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    filter: drop-shadow(0 0 10px rgba(255, 158, 11, 0.5));
+  }
+  100% {
+    filter: drop-shadow(0 0 20px rgba(255, 158, 11, 1));
+  }
+}
+
+.stars > input:checked + label:hover,
+.stars > input:checked + label:hover ~ label {
+  fill: #e58e09;
+}
+
+.stars > label:hover,
+.stars > label:hover ~ label {
+  fill: #ff9e0b;
+}
+
+.stars input:checked ~ label svg {
+  fill: #ffa723;
+}
+
 
 .stars input {
   display: none;
@@ -440,6 +571,7 @@ footer {
 /* contact left section  */
 
 .contact-left{
+  width: 30vw;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -530,9 +662,9 @@ footer {
 
 .contact-right{
   color: white;
-  max-width: 1000px;
+  width: 50vw;
   height: 350px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .contact-right p{
@@ -542,15 +674,6 @@ footer {
   line-height: 20px;
 }
 
-.contact-right span{
-  display: inline-block;
-  margin-top: 16px;
-  font-family: "Montserrat", serif;
-  font-weight: lighter;
-  font-size: 13px;
-  width: 1000px;
-  text-align: right;
-}
 
 /* all icons  */
 
