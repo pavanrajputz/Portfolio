@@ -51,11 +51,12 @@ body {
   padding: 8px 12px;
   border-radius: 4px;
   transition: all 0.3s ease;
+}
 
-  &:hover {
-    color: #0066ff;
-    transform: scale(1.1);
-  }
+.navbar ul li a:hover {
+
+  color: #0066ff;
+  transform: scale(1.1);
 }
 
 /* hero section starts here  */
@@ -64,7 +65,12 @@ body {
   height: 90vh;
   padding: 10px 0;
   display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  /* background-image: url(web-desigen-development.png); */
+  /* From Uiverse.io by csemszepp */ 
   background-size: cover;
+
 }
 .right-parallaxin{
   height: 100%;
@@ -168,13 +174,11 @@ body {
   padding: 2rem;
   transition: transform 0.3s ease-in-out;
 
-  &:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  }
-
 }
-
+.project-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 .pro-box1 {
   background: #f8f9fa;
 }
@@ -585,32 +589,6 @@ footer {
   font-size: 40px;
   color: white;
   transition: 0.5s;
-
-  &:hover{
-    color: #0A66C2;
-  }
-}
-
-#twitter{
-  font-size: 39px;
-  margin-left: 20px;
-  color: white;
-  transition: 0.5s;
-
-  &:hover{
-    color: #000000;
-  }
-}
-
-#github{
-  font-size: 39px;
-  margin-left: 20px;
-  color: white;
-  transition: 0.5s;
-
-  &:hover{
-    color: #000000;
-  }
 }
 
 #insta{
@@ -618,19 +596,21 @@ footer {
   margin-left: 20px;
   margin-top: 1px;
   color: white;
-  transition: 0.5s;
+}
 
-  &:hover{
-    background: linear-gradient(45deg, 
-    #f09433 0%, 
-    #e6683c 25%, 
-    #dc2743 50%, 
-    #cc2366 75%, 
-    #bc1888 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+#linkin:hover{
+  color: #0A66C2;
+}
+
+#insta:hover{
+  background: linear-gradient(45deg, 
+  #f09433 0%, 
+  #e6683c 25%, 
+  #dc2743 50%, 
+  #cc2366 75%, 
+  #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (prefers-reduced-motion: reduce) {
