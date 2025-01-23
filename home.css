@@ -269,6 +269,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px, solid, rgba(255, 255, 255, 0.18);
+  overflow: auto;
 }
 
 .summary h3 {
@@ -293,7 +294,6 @@ body {
 }
 
 .about img {
-  width: 30vw;
   height: 500px;
   margin-right: 3vw;
   margin-top: 85px;
@@ -565,7 +565,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 100px;
+  padding: 50px 5vw;
 }
 
 /* contact left section  */
@@ -576,6 +576,7 @@ footer {
   flex-direction: column;
   align-items: start;
   gap: 10px;
+  background-color: red;
 }
 
 .contact-left h2{
@@ -587,7 +588,7 @@ footer {
 }
 
 .contact-input{
-  width: 500px;
+  width: 35rem;
   height: 50px;
   border: none;
   outline: none;
@@ -599,7 +600,7 @@ footer {
 }
 
 .contact-left textarea{
-  width: 500px;
+  width: 35rem;
   height: 200px;
   padding-top: 15px;
   border-radius: 10px;
