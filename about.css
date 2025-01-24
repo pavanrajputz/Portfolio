@@ -1,15 +1,26 @@
 .about {
-    height: 800px;
+    height: 1200px;
     width: 100vw;
+    justify-content: center;
     display: flex;
+    flex-direction: column;
     color: white;
+  }
+
+  .about-agency{
+    width: 100vw;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    margin-top: 25px;
+    padding-top: 80px;
   }
   
   .summary{
     margin-right: 25px;
-    width: 700vw;
+    width: 80vw;
     height: 500px;
-    margin-top: 100px;
     margin-left: 3vw;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
@@ -43,6 +54,40 @@
   .about img {
     height: 500px;
     margin-right: 3vw;
-    margin-top: 85px;
     filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.37));
+  }
+
+  .about-members{
+    background-color: red;
+    margin-top: 50px;
+    height: 420px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .rohit-card{
+    height: 400px;
+    width: 300px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pawan-card{
+    height: 400px;
+    width: 300px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .suraj-card{
+    height: 400px;
+    width: 300px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
   }

@@ -143,25 +143,6 @@ footer {
     }
   }
   
-  #insta{
-    font-size: 38px;
-    margin-left: 20px;
-    margin-top: 1px;
-    color: white;
-  
-    &:hover{
-    background: linear-gradient(45deg, 
-    #f09433 0%, 
-    #e6683c 25%, 
-    #dc2743 50%, 
-    #cc2366 75%, 
-    #bc1888 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
-  }
-  
   #twitter{
     font-size: 40px;
     margin-left: 20px;
@@ -183,6 +164,29 @@ footer {
       color: black;
     }
   }
+  
+  #insta{
+    font-size: 38px;
+    margin-left: 20px;
+    margin-top: 1px;
+    color: white;
+    transition: background 0.5s ease-in-out;
+  
+    
+  }
+
+  #insta:hover{
+    background: linear-gradient(45deg, 
+    #f09433 0%, 
+    #e6683c 25%, 
+    #dc2743 50%, 
+    #cc2366 75%, 
+    #bc1888 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-delay: 0.2s;
+    }
   
   
   @media (prefers-reduced-motion: reduce) {
