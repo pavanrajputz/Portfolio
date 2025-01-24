@@ -1,0 +1,47 @@
+.sticky{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  /* navbar starts here  */
+  
+  .navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;   
+    z-index: 100;    
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+  }
+  
+  .navbar ul li {
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+  
+    color: #0066ff;
+    transform: scale(1.1);
+  }
