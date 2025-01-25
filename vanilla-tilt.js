@@ -495,9 +495,9 @@ var VanillaTilt = (function () {
     }());
 
     VanillaTilt.init(document.querySelector(".summary"), {
-      max: 10,          // Maximum tilt angle (reduce for less tilt)
+      max: 2,          // Maximum tilt angle (reduce for less tilt)
       speed: 300,       // Speed of the tilt animation
-      scale: 0.95,       // No scaling (set to 1 for no size increase)
-      perspective: 1000, // Adjust perspective (higher value = less perspective distortion)
+      scale: 1,       // No scaling (set to 1 for no size increase)
+      perspective: 1500, // Adjust perspective (higher value = less perspective distortion)
       glare: false,     // Disable glare effect (optional)
     });
