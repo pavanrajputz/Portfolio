@@ -29,7 +29,11 @@
     border: 1px, solid, rgba(255, 255, 255, 0.18);
     overflow: auto;
   }
-  
+
+  .information{
+    background-color: red;
+  }
+
   .summary h3 {
     padding-top: 20px;
     padding-left: 20px;
