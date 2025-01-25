@@ -42,7 +42,6 @@
   
   .navbar ul li a:hover {
   
-<<<<<<< HEAD
     color: #2152e4;
     transform: scale(1.1);
   }
@@ -63,9 +62,8 @@
   .navbar ul li a:hover::before {
 
     width: 88%;
-  }
-=======
+  
+  
     color: #0066ff;
     transform: scale(1.1);
   }
->>>>>>> origin
