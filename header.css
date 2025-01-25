@@ -42,30 +42,6 @@
   
   .navbar ul li a:hover {
   
-<<<<<<< HEAD
     color: #0066ff;
     transform: scale(1.1);
   }
-=======
-    color: #2152e4;
-    transform: scale(1.1);
-  }
-
-  .navbar ul li a::before {
-
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 12px;
-    width: 0%;
-    height: 2px;
-    background-color: rgb(243, 237, 237);
-    transition: all 0.3s;
-    
-  }
-
-  .navbar ul li a:hover::before {
-
-    width: 88%;
-  }
->>>>>>> a5515bd8bdfac5b47c56b69851b52c8981b4b5c4
