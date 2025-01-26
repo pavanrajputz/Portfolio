@@ -57,7 +57,6 @@
   }
 
   .about-members{
-    background-color: red;
     margin-top: 50px;
     height: 420px;
     width: 80vw;
@@ -71,26 +70,135 @@
   .rohit-card{
     height: 400px;
     width: 300px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    justify-content: center;
+    border-radius: 8px;
+    transform-origin: center bottom; 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px, solid, rgba(255, 255, 255, 0.18);
+    transition: 0.5s;
+
+    &:hover{
+      transform: perspective(900px) rotateX(15deg);
+    }
+  }
+
+  .rohit-card img{
+    height: 60%;
+    align-self: center;
+    filter: grayscale(1);
+    transition: 0.5s;
+
+    &:hover{
+      filter: none;
+      transform: scale(1.1);
+    }
+  }
+
+  .rohit-card h3{
+    font-family: "Montserrat", serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }
+
+  .rohit-card p{
+    font-family: "Jaldi", serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 24px;
   }
   
   .pawan-card{
     height: 400px;
     width: 300px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 8px;
+    transform-origin: center bottom; 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px, solid, rgba(255, 255, 255, 0.18);
+    transition: 0.5s;
+
+    &:hover{
+      transform: perspective(900px) rotateX(15deg);
+    }
+  }
+
+  .pawan-card img{
+    height: 60%;
+    align-self: center;
+    filter: grayscale(1);
+    transition: 0.5s;
+
+    &:hover{
+      filter: none;
+      transform: scale(1.1);
+    }
+  }
+
+  .pawan-card h3{
+    font-family: "Montserrat", serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }
+
+  .pawan-card p{
+    font-family: "Jaldi", serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 24px;
   }
   
   .suraj-card{
     height: 400px;
     width: 300px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 8px;
+    transform-origin: center bottom; 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px, solid, rgba(255, 255, 255, 0.18);
+    transition: 0.5s;
+
+    &:hover{
+      transform: perspective(900px) rotateX(15deg);
+    }
+  }
+
+  .suraj-card img{
+    height: 60%;
+    align-self: center;
+    filter: grayscale(1);
+    transition: 0.5s;
+
+    &:hover{
+      filter: none;
+      transform: scale(1.1);
+    }
+  }
+
+  .suraj-card h3{
+    font-family: "Montserrat", serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }
+
+  .suraj-card p{
+    font-family: "Jaldi", serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 24px;
   }
