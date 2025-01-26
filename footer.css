@@ -1,7 +1,7 @@
 footer {
     display: flex;
     flex-direction: row;
-    background-color: #adb5bd;
+    background-color: #f1f1e6;
     margin-top: 3px;
     height: 600px;
     width: auto;
@@ -30,7 +30,7 @@ footer {
   .contact-left h2{
     font-family: "Montserrat", serif;
     font-weight: 700;
-    color: #f3f2f3;
+    color: #2b2a2a;
     font-size: 40px;
     margin-bottom: 5px;
   }
@@ -41,9 +41,8 @@ footer {
     border: none;
     outline: none;
     padding-left: 25px;
-    color: #666;
+    color: #2b2a2a;
     border-radius: 10px;
-    box-shadow: 0 10px 20px #65696d(0, 0, 0, 0.1);
     transition: all 0.3s;
   }
   
@@ -52,7 +51,6 @@ footer {
     height: 200px;
     padding-top: 15px;
     border-radius: 10px;
-    box-shadow: 0 10px 20px #65696d(0, 0, 0, 1);
   }
   
   .contact-input::placeholder{
@@ -61,7 +59,7 @@ footer {
   
   .contact-input:hover,
   .contact-input:focus {
-    outline: 1px solid #0066ff;
+    outline: 1px solid #004ca9;
     box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
   }
   
@@ -110,7 +108,7 @@ footer {
   /* contact right section  */
   
   .contact-right{
-    color: white;
+    color: #2b2a2a;
     width: 50vw;
     height: 350px;
     margin-top: 50px;
@@ -120,6 +118,7 @@ footer {
     text-align: justify;
     font-family: "Montserrat", serif;
     font-size: 15px;
+    font-weight: 400;
     line-height: 20px;
   }
   
@@ -135,7 +134,7 @@ footer {
   
   #linkin{
     font-size: 40px;
-    color: white;
+    color: #2b2a2a;
     transition: 0.4s;
   
     &:hover{
@@ -146,7 +145,7 @@ footer {
   #twitter{
     font-size: 40px;
     margin-left: 20px;
-    color: white;
+    color: #2b2a2a;
     transition: 0.4s;
   
     &:hover{
@@ -157,7 +156,7 @@ footer {
   #github{
     font-size: 40px;
     margin-left: 20px;
-    color: white;
+    color: #2b2a2a;
     transition: 0.4s;
   
     &:hover{
@@ -169,10 +168,7 @@ footer {
     font-size: 38px;
     margin-left: 20px;
     margin-top: 1px;
-    color: white;
-    transition: background 0.5s ease-in-out;
-  
-    
+    color: #2b2a2a;
   }
 
   #insta:hover{
