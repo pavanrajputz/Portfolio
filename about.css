@@ -73,7 +73,7 @@
     width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    place-items: center;
     border-radius: 8px;
     transform-origin: center bottom; 
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
@@ -89,8 +89,9 @@
   }
 
   .rohit-card img{
+    background-color: red;
+    position: absolute;
     height: 60%;
-    align-self: center;
     filter: grayscale(1);
     transition: 0.5s;
 
@@ -101,6 +102,8 @@
   }
 
   .rohit-card h3{
+    position: absolute;
+    top: 60%;
     font-family: "Montserrat", serif;
     font-size: 35px;
     text-align: center;
@@ -109,6 +112,8 @@
   }
 
   .rohit-card p{
+    position: absolute;
+    top: 70%;
     font-family: "Jaldi", serif;
     font-size: 22px;
     text-align: center;
@@ -135,6 +140,7 @@
   }
 
   .pawan-card img{
+    background-color: red;
     height: 60%;
     align-self: center;
     filter: grayscale(1);
@@ -181,6 +187,7 @@
   }
 
   .suraj-card img{
+    background-color: red;
     height: 60%;
     align-self: center;
     filter: grayscale(1);
