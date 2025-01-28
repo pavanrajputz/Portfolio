@@ -4,7 +4,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #2b2a2a;
   }
 
   .about-agency{
@@ -12,7 +12,6 @@
     height: 550px;
     display: flex;
     flex-direction: row;
-    /* background-color: red; */
     margin-top: 25px;
     padding-top: 80px;
   }
@@ -22,11 +21,12 @@
     width: 80vw;
     height: 500px;
     margin-left: 3vw;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border: 1px, solid, rgba(255, 255, 255, 0.18);
+    border: 3px, solid, rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 0px 10px 3px #DCDCC7;
     overflow: auto;
   }
 
@@ -58,7 +58,6 @@
   }
 
   .about-members{
-    background-color: red;
     margin-top: 50px;
     height: 420px;
     width: 80vw;
@@ -66,28 +65,151 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    align-self: center;
   }
 
   .rohit-card{
     height: 400px;
     width: 300px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
+    place-items: center;
+    border-radius: 8px;
+    transform-origin: center bottom; 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 3px, solid, rgba(255, 255, 255, 0.18);
+    transition: 0.5s;
+
+    &:hover{
+      transform: perspective(900px) rotateX(15deg);
+      box-shadow: 0px 10px 5px #DCDCC7;
+    }
+  }
+
+  .rohit-card img{
+    background-color: red;
+    position: absolute;
+    height: 60%;
+    filter: grayscale(1);
+    transition: 0.5s;
+
+    &:hover{
+      filter: none;
+      transform: scale(1.1);
+    }
+  }
+
+  .rohit-card h3{
+    position: absolute;
+    top: 60%;
+    font-family: "Montserrat", serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }
+
+  .rohit-card p{
+    position: absolute;
+    top: 70%;
+    font-family: "Jaldi", serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 24px;
   }
   
   .pawan-card{
     height: 400px;
     width: 300px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
+    transform-origin: center bottom; 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 3px, solid, rgba(255, 255, 255, 0.18);
+    transition: 0.5s;
+
+    &:hover{
+      transform: perspective(900px) rotateX(15deg);
+      box-shadow: 0px 10px 5px #DCDCC7;
+    }
+  }
+
+  .pawan-card img{
+    background-color: red;
+    height: 60%;
+    align-self: center;
+    filter: grayscale(1);
+    transition: 0.5s;
+
+    &:hover{
+      filter: none;
+      transform: scale(1.1);
+    }
+  }
+
+  .pawan-card h3{
+    font-family: "Montserrat", serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }
+
+  .pawan-card p{
+    font-family: "Jaldi", serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 24px;
   }
   
   .suraj-card{
     height: 400px;
     width: 300px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
+    transform-origin: center bottom; 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 3px, solid, rgba(255, 255, 255, 0.18);
+    transition: 0.5s;
+
+    &:hover{
+      transform: perspective(900px) rotateX(15deg);
+      box-shadow: 0px 10px 5px #DCDCC7;
+    }
+  }
+
+  .suraj-card img{
+    background-color: red;
+    height: 60%;
+    align-self: center;
+    filter: grayscale(1);
+    transition: 0.5s;
+
+    &:hover{
+      filter: none;
+      transform: scale(1.1);
+    }
+  }
+
+  .suraj-card h3{
+    font-family: "Montserrat", serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }
+
+  .suraj-card p{
+    font-family: "Jaldi", serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 24px;
   }

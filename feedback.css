@@ -184,64 +184,37 @@
   /* Style for checked stars */
   .stars input:checked~label {
     color: #0066ff;
-  }
-  
-  .cards{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .card-1 {
-    width: 100%;
-    max-width: 380px;
-    height: 90px;
-    margin-top: 50px;
+  } /* From Uiverse.io by saidbl1 */ 
+  .inputBox {
+    position: relative;
+    margin-top: 70px;
     margin-left: 100px;
-    background: #353535;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    backdrop-filter: blur(10px);
+    
+  }
+  .inputBox input {
+    padding: 15px 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #2b2a2a;
+    border: 2px solid #2b2a2a;
+    font-size: 1em;
+    padding-right: 165px;
     transition: 0.5s ease-in-out;
   }
-  
-  .card-1:hover {
-    cursor: pointer;
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    font-size: 0.7em;
+    transform: translateX(14px) translateY(-7.5px);
+    padding: 0 6px 1px 5px;
+    border-radius: 2px;
+    background: #212121;
+    letter-spacing: 1px;
+    border: 2px solid #2b2a2a;
+    color: #e8e8e8;
+  }
+  .inputBox input:hover{
     transform: scale(1.05);
-  }
-  
-  .card-1 img{
-    width: 60px;
-    height: 60px;
-    margin-left: 10px;
-    border-radius: 10px;
-  }
-  
-  .textBox-1 {
-    width: calc(100% - 105px);
-    margin-left: 15px;
-    color: white;
-    font-family: "Montserrat", serif;
-  }
-  
-  .textContent-1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .span {
-    font-size: 14px;
-  }
-  
-  .h1 {
-    font-size: 20px;
-    font-weight: normal;
-  }
-  
-  .p {
-    font-size: 14px;
-    font-weight: lighter;
   }
   
