@@ -51,7 +51,7 @@
     line-height: 20px;
   }
   
-  .about img {
+  .pawan{
     height: 500px;
     margin-right: 3vw;
     filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.37));
@@ -94,6 +94,7 @@
     height: 60%;
     filter: grayscale(1);
     transition: 0.5s;
+    border-radius: 5px;
 
     &:hover{
       filter: none;
@@ -111,9 +112,18 @@
     margin-top: 7px;
   }
 
-  .rohit-card p{
+  .rohit-p{
     position: absolute;
-    top: 70%;
+    top: 73%;
+    font-family: "Jaldi", serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .rohit-d{
+    position: absolute;
+    top: 79%;
     font-family: "Jaldi", serif;
     font-size: 22px;
     text-align: center;
@@ -145,6 +155,7 @@
     align-self: center;
     filter: grayscale(1);
     transition: 0.5s;
+    border-radius: 5px;
 
     &:hover{
       filter: none;
@@ -192,6 +203,7 @@
     align-self: center;
     filter: grayscale(1);
     transition: 0.5s;
+    border-radius: 5px;
 
     &:hover{
       filter: none;
