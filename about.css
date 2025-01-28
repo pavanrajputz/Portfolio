@@ -1,10 +1,10 @@
 .about {
     height: 1200px;
     width: 100vw;
-    justify-content: center;
     display: flex;
     flex-direction: column;
     color: #2b2a2a;
+    align-items: center;
   }
 
   .about-agency{
@@ -12,7 +12,7 @@
     height: 550px;
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
+    margin-top: 10px;
     padding-top: 80px;
   }
   
@@ -57,13 +57,11 @@
     filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.37));
   }
 
-  .about-members{
-    margin-top: 50px;
+  .abtmmbrs-1{
     height: 420px;
     width: 80vw;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
     align-self: center;
   }
@@ -130,17 +128,19 @@
     line-height: 24px;
   }
   
-  .pawan-card{
+  .rhtcrd{
     height: 400px;
     width: 300px;
     display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    transform-origin: center bottom; 
+    justify-content: center;
+    transform-origin: center bottom;
+    transform-style: preserve-3d;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
     border: 3px, solid, rgba(255, 255, 255, 0.18);
+    position: relative;
     transition: 0.5s;
 
     &:hover{
@@ -149,45 +149,57 @@
     }
   }
 
-  .pawan-card img{
-    background-color: red;
-    height: 60%;
-    align-self: center;
-    filter: grayscale(1);
+  .img-wrapper {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transform-origin: center bottom;
+    /* background-color: red; */
+    /* opacity: 0.3; */
+    transition: 0.5s;
+}
+
+.rhtcrd:hover .img-wrapper {
+  transform: perspective(900px) rotateX(-20deg);
+  height: 75%; /* Counter-rotation */
+}
+
+.img-wrapper img {
+    height: 100%;
+    object-fit: cover;
+    transform: translateZ(1px); 
+    backface-visibility: hidden; 
+}
+  
+  .pwncrd{
+    height: 400px;
+    width: 300px;
+    transform-origin: center bottom;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border: 3px, solid, rgba(255, 255, 255, 0.18);
     transition: 0.5s;
     border-radius: 5px;
 
     &:hover{
-      filter: none;
-      transform: scale(1.1);
+      transform: perspective(900px) rotateX(15deg);
+      box-shadow: 0px 10px 5px #DCDCC7;
     }
   }
-
-  .pawan-card h3{
-    font-family: "Montserrat", serif;
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: 7px;
-  }
-
-  .pawan-card p{
-    font-family: "Jaldi", serif;
-    font-size: 22px;
-    text-align: center;
-    line-height: 24px;
-  }
   
-  .suraj-card{
+  .srjcrd{
     height: 400px;
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    transform-origin: center bottom; 
+    transform-origin: center bottom;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
     border: 3px, solid, rgba(255, 255, 255, 0.18);
     transition: 0.5s;
 

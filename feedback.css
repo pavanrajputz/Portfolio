@@ -3,30 +3,99 @@
     height: 800px;
     width: 100vw;
     display: flex;
+    background-color: red;
+  }
+
+  .leftside{
+    height: 100%;
+    width: 50%;
+    display: flex;
     flex-direction: column;
-    align-items: top;
-    justify-content: center;
-    background-color: #adb5bd;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blue;
+  }
+  
+  
+  .inputBox {
+    width: 80%;
+  }
+
+  .inputBox input {
+    width: 94%;
+    min-height: 20px;
+    max-height: 100px;
+    padding: 15px 20px;
+    resize: none;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #2b2a2a;
+    border: 2px solid #2b2a2a;
+    font-size: 1em;
+    transition: 0.5s;
+
+    &:hover{
+      transform: scale(1.01);
+    }
+  }
+
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    font-size: 0.8em;
+    transform: translateX(120px) translateY(-7.5px);
+    padding: 0 6px 1px 5px;
+    border-radius: 2px;
+    background: #2b2a2a;
+    letter-spacing: 1px;
+    border: 2px solid #2b2a2a;
+    color: #f1f1e6;
+  }
+
+  .faq{
+    width: 80%;
+    height: 70%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px, solid, rgba(255, 255, 255, 0.18);
+    box-shadow: 5px, 10px;
+
+  }
+
+  .rightside{
+    height: 100%;
+    width: 50%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
   
   .rating-box {
     text-align: center;
     padding: 30px;
     border-radius: 10px;
-    max-width: 400px;
-    margin: 20px auto;
-    height: 163px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    max-width: 300px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px, solid, rgba(255, 255, 255, 0.18);
     box-shadow: 5px, 10px;
+    transition: 0.5s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
   }
   
   .rating-box h2{
     margin-bottom: 30px;
-    color: white;
+    color: 2b2a2a;
     font-family: "Montserrat", serif;
   }
   
@@ -35,6 +104,7 @@
   
   
   .stars {
+    margin-top: 20px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -55,7 +125,7 @@
   }
   
   .stars > label > svg {
-    fill: white;
+    fill: 2b2a2a;
     transition: fill 0.3s ease;
   }
   
@@ -184,37 +254,73 @@
   /* Style for checked stars */
   .stars input:checked~label {
     color: #0066ff;
-  } /* From Uiverse.io by saidbl1 */ 
-  .inputBox {
-    position: relative;
-    margin-top: 70px;
-    margin-left: 100px;
-    
   }
-  .inputBox input {
-    padding: 15px 20px;
-    outline: none;
-    background: transparent;
-    border-radius: 5px;
-    color: #2b2a2a;
-    border: 2px solid #2b2a2a;
-    font-size: 1em;
-    padding-right: 165px;
-    transition: 0.5s ease-in-out;
+
+  .reviews{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
   }
-  .inputBox span {
-    position: absolute;
-    left: 0;
-    font-size: 0.7em;
-    transform: translateX(14px) translateY(-7.5px);
-    padding: 0 6px 1px 5px;
-    border-radius: 2px;
-    background: #212121;
-    letter-spacing: 1px;
-    border: 2px solid #2b2a2a;
-    color: #e8e8e8;
-  }
-  .inputBox input:hover{
-    transform: scale(1.05);
-  }
-  
+
+  /* From Uiverse.io by JohnnyCSilva */ 
+.card {
+  width: 100%;
+  max-width: 290px;
+  height: 70px;
+  background: #353535;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background: linear-gradient(#d7cfcf, #9198e5);
+}
+
+.card:hover > .img {
+  transition: 0.5s ease-in-out;
+  background: linear-gradient(#9198e5, #712020);
+}
+
+.textBox {
+  width: calc(100% - 90px);
+  margin-left: 10px;
+  color: white;
+  font-family: 'Poppins' sans-serif;
+}
+
+.textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.span {
+  font-size: 10px;
+}
+
+.h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.p {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
