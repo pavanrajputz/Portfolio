@@ -51,189 +51,119 @@
     line-height: 20px;
   }
   
-  .pawan{
+  .logo{
     height: 500px;
     margin-right: 3vw;
     filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.37));
   }
 
-  .abtmmbrs-1{
+  .about-members{
+    background-color: red;
     height: 420px;
     width: 80vw;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
     align-self: center;
   }
 
-  .rohit-card{
+  .suraj-card{
     height: 400px;
     width: 300px;
     display: flex;
     flex-direction: column;
-    place-items: center;
-    border-radius: 8px;
-    transform-origin: center bottom; 
+    align-items: center;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
     border: 3px, solid, rgba(255, 255, 255, 0.18);
-    transition: 0.5s;
-
-    &:hover{
-      transform: perspective(900px) rotateX(15deg);
-      box-shadow: 0px 10px 5px #DCDCC7;
-    }
-  }
-
-  .rohit-card img{
-    background-color: red;
-    position: absolute;
-    height: 60%;
-    filter: grayscale(1);
-    transition: 0.5s;
-    border-radius: 5px;
-
-    &:hover{
-      filter: none;
-      transform: scale(1.1);
-    }
-  }
-
-  .rohit-card h3{
-    position: absolute;
-    top: 60%;
-    font-family: "Montserrat", serif;
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: 7px;
-  }
-
-  .rohit-p{
-    position: absolute;
-    top: 73%;
-    font-family: "Jaldi", serif;
-    font-size: 22px;
-    text-align: center;
-    line-height: 24px;
-  }
-
-  .rohit-d{
-    position: absolute;
-    top: 79%;
-    font-family: "Jaldi", serif;
-    font-size: 22px;
-    text-align: center;
-    line-height: 24px;
-  }
-  
-  .rhtcrd{
-    height: 400px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    transform-origin: center bottom;
+    overflow: auto;
     transform-style: preserve-3d;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    border: 3px, solid, rgba(255, 255, 255, 0.18);
-    position: relative;
+    transform-origin: center bottom;
     transition: 0.5s;
 
     &:hover{
       transform: perspective(900px) rotateX(15deg);
-      box-shadow: 0px 10px 5px #DCDCC7;
-    }
-  }
-
-  .img-wrapper {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transform-origin: center bottom;
-    /* background-color: red; */
-    /* opacity: 0.3; */
-    transition: 0.5s;
-}
-
-.rhtcrd:hover .img-wrapper {
-  transform: perspective(900px) rotateX(-20deg);
-  height: 75%; /* Counter-rotation */
-}
-
-.img-wrapper img {
-    height: 100%;
-    object-fit: cover;
-    transform: translateZ(1px); 
-    backface-visibility: hidden; 
-}
-  
-  .pwncrd{
-    height: 400px;
-    width: 300px;
-    transform-origin: center bottom;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    border: 3px, solid, rgba(255, 255, 255, 0.18);
-    transition: 0.5s;
-    border-radius: 5px;
-
-    &:hover{
-      transform: perspective(900px) rotateX(15deg);
-      box-shadow: 0px 10px 5px #DCDCC7;
-    }
-  }
-  
-  .srjcrd{
-    height: 400px;
-    width: 300px;
-    transform-origin: center bottom;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    border: 3px, solid, rgba(255, 255, 255, 0.18);
-    transition: 0.5s;
-
-    &:hover{
-      transform: perspective(900px) rotateX(15deg);
-      box-shadow: 0px 10px 5px #DCDCC7;
+      box-shadow: 0px 10px 10px 3px #DCDCC7;
     }
   }
 
   .suraj-card img{
-    background-color: red;
-    height: 60%;
-    align-self: center;
+    width: 65%;
+    border-radius: 20px;
     filter: grayscale(1);
     transition: 0.5s;
-    border-radius: 5px;
+  }
 
-    &:hover{
-      filter: none;
-      transform: scale(1.1);
-    }
+  .suraj-card:hover > img{
+    filter: grayscale(0);
   }
 
   .suraj-card h3{
+    margin-top: 10px;
+    font-size: 25px;
     font-family: "Montserrat", serif;
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: 7px;
+    font-weight: 700;
   }
 
   .suraj-card p{
-    font-family: "Jaldi", serif;
-    font-size: 22px;
+    white-space: pre-line;
     text-align: center;
-    line-height: 24px;
+    margin-top: 8px;
+    font-size: 15px;
+    font-family: "Jaldi", serif;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .pawan-card{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 3px, solid, rgba(255, 255, 255, 0.18);
+    overflow: auto;
+    transform-style: preserve-3d;
+    transform-origin: center bottom;
+    transition: 0.5s;
+
+    &:hover{
+      transform: perspective(900px) rotateX(15deg);
+      box-shadow: 0px 10px 10px 3px #DCDCC7;
+    }
+  }
+
+  .pawan-card img{
+    width: 65%;
+    border-radius: 20px;
+    filter: grayscale(1);
+    transition: 0.5s;
+  }
+
+  .pawan-card:hover > img{
+    filter: grayscale(0);
+  }
+
+  .pawan-card h3{
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+  }
+
+  .pawan-card p{
+    white-space: pre-line;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 15px;
+    font-family: "Jaldi", serif;
+    font-weight: 500;
+    line-height: 1.5;
   }
