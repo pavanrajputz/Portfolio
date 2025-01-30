@@ -69,86 +69,34 @@
       </div>
   </section>
   
-  <button class="floating-button" onclick="openModal()">Enquiry</button>
+  <button class="floating-button" id="enquiryButton" onclick="openModal()">Enquiry</button>
   
-  <div class="modal" id="enquiryModal">
-      <div class="form-container">
-        <div class="form-header">Client Inquiry Form</div>
-        <form class="form-control" action="" method="post">
-            <div class="input-field">
-                <input required="" class="input" id="name" name="name" type="text" required />
-                <label class="label" for="name">Full Name</label>
-            </div>
-            <div class="input-field">
-                <input required="" class="input" id="email" name="email" type="email" required />
-                <label class="label" for="email">Enter Email</label>
-            </div>
-            <div class="input-field">
-                <input required="" class="input" type="tel" id="phone" name="phone" required />
-                <label class="label" for="phone">Phone Number</label>
-            </div>
-            <div class="input-field">
-                <input required="" class="input" id="project-name" name="project-name" type="text" />
-                <label class="label" for="project-name">Project Name/Title</label>
-            </div>
-            <div class="input-field">
-                <select class="input" id="service" name="service" required>
-                    <option value="">Select a service</option>
-                    <option value="full-stack">Full-Stack Web Development</option>
-                    <option value="frontend">Frontend Development</option>
-                    <option value="backend">Backend Development</option>
-                    <option value="uiux">UI/UX Design</option>
-                    <option value="mobile-app">Mobile App Development</option>
-                    <option value="digital-marketing">Digital Marketing</option>
-                </select>
-            </div>
-            <div class="input-field">
-                <!-- <label for="budget">Budget Range</label> -->
-                <select class="input" id="budget" name="budget" required>
-                    <option value="">Select your budget</option>
-                    <option value="10k-50k">₹10,000 - ₹50,000</option>
-                    <option value="50k-100k">₹50,000 - ₹1,00,000</option>
-                    <option value="100k+">₹1,00,000+</option>
-                    <option value="custom">Custom Budget</option>
-                </select>
-            </div>
-            <div class="input-field">
-                <!-- <label for="description">Project Description</label> -->
-                <textarea id="description" name="description" rows="4"
-                    placeholder="Describe your project goals and features( project Description)" required></textarea>
-            </div>
-            <div class="input-field">
-                <label for="attachments">Attachments</label>
-                <input type="file" id="attachments" name="attachments">
-            </div>
-            <div class="input-field">
-                <label class="" label" for="notes">Additional Notes or Questions</label>
-                <textarea id="notes" name="notes" rows="4" placeholder="Anything else you'd like to mention"></textarea>
-            </div>
-            <div class="input-field">
-                <label for="referral">How Did You Hear About Us?</label>
-                <select id="referral" name="referral" required>
-                    <option value="">Select an option</option>
-                    <option value="google">Google Search</option>
-                    <option value="social">Social Media</option>
-                    <option value="referral">Referral</option>
-                    <option value="ad">Advertisement</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-
-
-            <button type="submit">Submit</button>
-            <button class="close-btn" onclick="closeModal()">Close</button>
-
-            <div class="form-footer">
-                We’ll get back to you within 24-48 hours. Thank you for reaching out!
-            </div>
-            <!-- <a>Forgot your password?</a>
-        <button class="submit-btn">Sign In</button> -->
-        </form>
-    </div>
-  </div>
+  <div id="Modal" class="modal">
+    <div class="form-area">
+        <p class="title">Hire Me</p>
+    <form>
+        <div class="input-field">
+            <input required class="input" id="name" name="name" type="text" required />
+            <label class="label" for="name">Full Name</label>
+        </div>
+        <div class="input-field">
+            <input required class="input" id="email" name="email" type="email" required />
+            <label class="label" for="email">Enter Email</label>
+        </div>
+        <div class="input-field">
+            <input required class="input" type="text" id="phone" name="phone" required />
+            <label class="label" for="phone">Phone Number</label>
+        </div>
+        <div class="input-field">
+            <input required class="input" id="project-name" name="project-name" type="text" />
+            <label class="label" for="project-name">Project Title</label>
+        </div>
+        <div class="actions">
+            <button class="butn">Submit</button>
+             <button class="butn" onclick="closeModal()">Close</button>
+        </div>
+    </form>
+</div>
 
     <!-- Project Section  -->
 

@@ -1,9 +1,8 @@
-const modal = document.getElementById('enquiryModal');
-
-function openModal() {
-    modal.style.display = 'flex';
-}
-
-function closeModal() {
-    modal.style.display = 'none';
-}
+document.getElementById('enquiryButton').addEventListener('click', function() {
+    const Modal = document.getElementById('Modal');
+    if (Modal.style.display === 'none' || Modal.style.display === '') {
+        Modal.style.display = 'block';
+    } else {
+        Modal.style.display = 'none';
+    }
+});
