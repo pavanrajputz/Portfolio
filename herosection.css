@@ -16,14 +16,16 @@
 }
 
 .hero h1 {
+  font-family: "Montserrat", serif;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
+  font-family: "Jaldi", serif;
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .cta-buttons {
@@ -33,18 +35,27 @@
 }
 
 .cta-buttons a {
+  color: black;
   text-decoration: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  border-radius: 25px;
-  background-color: #ffffff;
-  color: #4A90E2;
-  transition: background-color 0.3s, color 0.3s;
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
 }
 
 .cta-buttons a:hover {
-  background-color: #4A90E2;
-  color: white;
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.cta-buttons a:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
 }
 
 .hero-image {
