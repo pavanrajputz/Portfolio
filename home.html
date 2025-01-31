@@ -75,25 +75,63 @@
     <div class="form-area">
         <p class="title">Hire Me</p>
     <form>
+
         <div class="input-field">
             <input required class="input" id="name" name="name" type="text" required />
             <label class="label" for="name">Full Name</label>
         </div>
+
         <div class="input-field">
             <input required class="input" id="email" name="email" type="email" required />
             <label class="label" for="email">Enter Email</label>
         </div>
+
         <div class="input-field">
             <input required class="input" type="text" id="phone" name="phone" required />
             <label class="label" for="phone">Phone Number</label>
         </div>
+
         <div class="input-field">
             <input required class="input" id="project-name" name="project-name" type="text" />
             <label class="label" for="project-name">Project Title</label>
         </div>
+
+        <div class="srvcslct">
+        <label for="serviceselection">Service you need</label>
+        <select name="serviceselection">
+          <option value="select"></option>
+          <option value="option1">Web Design</option>
+          <option value="option2">Web Development</option>
+          <option value="option3">Full stack development</option>
+          <option value="option4">WordPress development</option>
+          <option value="option5">E-Commerce Solutions</option>
+          <option value="option6">Software Development</option>
+          <option value="option7">Website Maintenance</option>
+        </select>
+      </div>
+
+      <div class="bgtslct">
+      <label for="budgetselection">Budget Range</label>
+      <select name="budgetselection">
+        <option value="select"></option>
+        <option value="option1">1500-3000</option>
+        <option value="option2">3500-5000</option>
+        <option value="option3">5500-8000</option>
+        <option value="option4">8500-12000</option>
+      </select>
+    </div>
+
+      <textarea class="prjdtls" name="details" placeholder="Describe your project here"></textarea>
+
+      <div class="files">
+        <input type="file" id="fileUpload" name="fileUpload">
+      </div>
+
+      <textarea class="notedtls" name="details" placeholder="Additional notes you'd like to mention"></textarea>
+
         <div class="actions">
-            <button class="butn">Submit</button>
-             <button class="butn" onclick="closeModal()">Close</button>
+            <button class="butn subbtn">Submit</button>
+             <button class="butn clsbtn" onclick="closeModal()">Close</button>
         </div>
     </form>
 </div>
