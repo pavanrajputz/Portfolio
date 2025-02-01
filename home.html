@@ -28,10 +28,10 @@
     <nav class="navbar">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#connect">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -76,10 +76,9 @@
     <div class="form-area">
       <p class="title">Hire Me</p>
 
-      <form action="https://api.web3forms.com/submit" method="POST">
+      <form>
 
         <div class="input-field">
-          <input type="hidden" name="access_key" value="dff13501-1cc0-48e5-b923-013943ed6a7e">
           <input required class="input" id="name" name="name" type="text" required />
           <label class="label" for="name">Full Name</label>
         </div>
@@ -127,7 +126,7 @@
         <textarea class="prjdtls" name="details" placeholder="Describe your project here"></textarea>
 
         <div class="files">
-          <input type="file" id="fileUpload" name="fileUpload">
+          <input type="file" accept=".pdf, .doc, .docx, .mp4, .fid, .ai">
         </div>
 
         <textarea class="notedtls" name="details" placeholder="Additional notes you'd like to mention"></textarea>
@@ -142,7 +141,7 @@
 
   <!-- Project Section  -->
 
-  <div class="showcase">
+  <div class="showcase" id="services">
     <div class="pro-text"> <a href="#">
         Services
       </a>
@@ -216,7 +215,7 @@
 
   <!-- About Section  -->
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="about-agency">
       <div class="summary">
         <h3>
@@ -379,7 +378,7 @@
 
   <!-- Contact section  -->
 
-  <footer class="contact-container">
+  <footer class="contact-container" id="connect">
     <form class="contact-left">
       <h2>Connect</h2>
       <input type="text" name="name" placeholder="enter your name" class="contact-input" required>
