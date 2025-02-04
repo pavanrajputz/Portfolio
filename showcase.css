@@ -1,6 +1,5 @@
 .showcase {
     display: flex;
-    background-color: #adb5bd;
     min-height: 900px;
     width: 100vw;
     flex-direction: column;
@@ -15,7 +14,7 @@
   
   .pro-text > a {
     font-family: "Montserrat", serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 50px;
     position: relative;
     display: inline-block;
@@ -23,6 +22,10 @@
     text-decoration: none;
     height: 50px;
     transition: 0.3s;
+  }
+
+  .pro-text > a:hover {
+    color: #004ca9;
   }
   
   .pro-text > a::after {
@@ -32,7 +35,7 @@
     height: 3.5px;
     bottom: -3.5px;
     left: 0;
-    background-color: #212529;
+    background-color: #004ca9;
     transform: scaleX(0);
     transition: transform 0.3s;
   }
