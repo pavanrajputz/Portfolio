@@ -40,7 +40,7 @@ questions.forEach((question , i) => {
 });
 
 
- var VanillaTilt.init(document.querySelector(".pro-box1"), {
+ var VanillaTilt,init(document.querySelector(".pro-box1"), {
     max: 10,          // Maximum tilt angle (reduce for less tilt)
     speed: 300,       // Speed of the tilt animation
     scale: 1.0,       // No scaling (set to 1 for no size increase)

@@ -69,152 +69,48 @@
     align-self: center;
   }
 
-  .suraj-card{
-    height: 400px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .mmcntnr{
+    width: 20rem;
+    height: 25rem;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .mmcrd{
+    transform-origin: center bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 3px, solid, rgba(255, 255, 255, 0.18);
-    overflow: auto;
-    transform-style: preserve-3d;
-    transform-origin: center bottom;
-    transition: 0.5s;
-
-    &:hover{
-      transform: perspective(900px) rotateX(15deg);
-      box-shadow: 0px 10px 10px 3px #DCDCC7;
-    }
+    transition: 0.3s;
   }
 
-  .suraj-card img{
-    width: 65%;
-    border-radius: 20px;
-    filter: grayscale(1);
-    transition: 0.5s;
+  .mmcntnr:hover .mmcrd{
+    transform: perspective(900px) rotateX(20deg);
+    box-shadow: 0px 10px 5px #e0e0c4;
   }
 
-  .suraj-card:hover > img{
-    filter: grayscale(0);
-  }
-
-  .suraj-card h3{
-    margin-top: 10px;
-    font-size: 25px;
-    font-family: "Montserrat", serif;
-    font-weight: 700;
-  }
-
-  .suraj-card p{
-    white-space: pre-line;
-    text-align: center;
-    margin-top: 8px;
-    font-size: 15px;
-    font-family: "Jaldi", serif;
-    font-weight: 500;
-    line-height: 1.5;
-  }
-
-  .pawan-card{
-    height: 400px;
-    width: 300px;
+  .mmsb{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 3px, solid, rgba(255, 255, 255, 0.18);
-    overflow: auto;
-    transform-style: preserve-3d;
-    transform-origin: center bottom;
-    transition: 0.5s;
-
-    &:hover{
-      transform: perspective(900px) rotateX(15deg);
-      box-shadow: 0px 10px 10px 3px #DCDCC7;
-    }
+    align-items: start;
+    justify-content: center;
   }
 
-  .pawan-card img{
-    width: 65%;
-    border-radius: 20px;
+  .mmsb img{
+    width: 13rem;
     filter: grayscale(1);
     transition: 0.5s;
   }
 
-  .pawan-card:hover > img{
+  .mmsb:hover img{
     filter: grayscale(0);
-  }
-
-  .pawan-card h3{
-    margin-top: 10px;
-    font-size: 25px;
-    font-family: "Montserrat", serif;
-    font-weight: 700;
-  }
-
-  .pawan-card p{
-    white-space: pre-line;
-    text-align: center;
-    margin-top: 8px;
-    font-size: 15px;
-    font-family: "Jaldi", serif;
-    font-weight: 500;
-    line-height: 1.5;
-  }
-
-  .rohit-card{
-    height: 400px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 3px, solid, rgba(255, 255, 255, 0.18);
-    overflow: auto;
-    transform-style: preserve-3d;
-    transform-origin: center bottom;
-    transition: 0.5s;
-
-    &:hover{
-      transform: perspective(900px) rotateX(15deg);
-      box-shadow: 0px 10px 10px 3px #DCDCC7;
-    }
-  }
-
-  .rohit-card img{
-    width: 65%;
-    border-radius: 20px;
-    filter: grayscale(1);
-    transition: 0.5s;
-  }
-
-  .rohit-card:hover > img{
-    filter: grayscale(0);
-  }
-
-  .rohit-card h3{
-    margin-top: 10px;
-    font-size: 25px;
-    font-family: "Montserrat", serif;
-    font-weight: 700;
-  }
-
-  .rohit-card p{
-    white-space: pre-line;
-    text-align: center;
-    margin-top: 8px;
-    font-size: 15px;
-    font-family: "Jaldi", serif;
-    font-weight: 500;
-    line-height: 1.5;
+    transform: translateY(-8px);
+    filter: drop-shadow(0px 0px 5px #e0e0c4);
   }

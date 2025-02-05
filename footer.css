@@ -1,21 +1,17 @@
-footer {
+/* contact section */
+  
+  .contact-container{
     display: flex;
     flex-direction: row;
-    background-color: #f1f1e6;
     margin-top: 3px;
     height: 600px;
     width: auto;
-  }
-  
-  /* contact section */
-  
-  .contact-container{
     height: 600px;
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 2fr;
     padding: 50px 5vw;
-    gap: 50px;
+    gap: 80px;
   }
   
   /* contact left section  */
@@ -53,6 +49,7 @@ footer {
     min-width: 100%;
     max-width: 100%;
     min-height: 200px;
+    max-height: 200px;
     padding-top: 15px;
     border-radius: 10px;
   }
@@ -115,7 +112,7 @@ footer {
     color: #2b2a2a;
     width: 50vw;
     height: 350px;
-    margin-top: 50px;
+    margin-top: 80px;
   }
   
   .contact-right p{
