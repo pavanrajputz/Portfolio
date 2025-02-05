@@ -1,31 +1,40 @@
 .hero {
+  height: 1045px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, #4A90E2, #8E44AD);
   color: white;
   min-height: 100vh;
+}
  
+.container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #001f7c38;
+  z-index: -1;
 }
 
-.hero-content {
-  max-width: 600px;
+.galaxy{
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  mix-blend-mode: lighten;
 }
 
-.hero h1 {
-  font-family: "Montserrat", serif;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-family: "Jaldi", serif;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  line-height: 1.2;
+.blackhole{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  mix-blend-mode: lighten;
+  margin-top: -26%;
 }
 
 .cta-buttons {
@@ -56,12 +65,6 @@
 .cta-buttons a:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
-}
-
-.hero-image {
-  width: 100%;
-  max-width: 500px;
-  margin: 2rem auto;
 }
 
 
