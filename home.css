@@ -5,11 +5,16 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  /* border: 2px solid rebeccapurple; */
 }
 
 body {
   font-family: Arial, sans-serif;
   background-color: #f1f1e6;
+  /* box-sizing: border-box; */
+  border: 5px solid #2b2a2a;
+  /* overflow-x: hidden; */
+
 }

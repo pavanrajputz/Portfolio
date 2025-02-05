@@ -1,9 +1,10 @@
 .showcase {
     display: flex;
     min-height: 900px;
-    width: 100vw;
+    width: 99.5%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   
   .pro-text {
@@ -11,7 +12,7 @@
     padding: 0.5rem 0.2rem;
     text-align: center;
   }
-  
+
   .pro-text > a {
     font-family: "Montserrat", serif;
     font-weight: 700;
@@ -47,20 +48,22 @@
   /*project container and project box desigining*/
   
   .project-container {
-    width: 95vw;
+    width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     padding: 2rem 4rem;
     grid-gap: 40px;
+    gap: 1.5rem;
   }
   
   .project-box {
-    height: 450px;
+    height: 400px;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     padding: 2rem;
     transition: transform 0.3s ease-in-out;
+  
   
   }
   .project-box:hover {
