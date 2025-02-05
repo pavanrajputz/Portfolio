@@ -8,6 +8,8 @@
   background: linear-gradient(135deg, #4A90E2, #8E44AD);
   color: white;
   min-height: 100vh;
+  /* min-width: 100%; */
+  /* max-width: 100%; */
  
 }
 

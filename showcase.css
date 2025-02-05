@@ -1,7 +1,7 @@
 .showcase {
     display: flex;
     min-height: 900px;
-    width: 100vw;
+    width: 99.5%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     padding: 0.5rem 0.2rem;
     text-align: center;
   }
-  
+
   .pro-text > a {
     font-family: "Montserrat", serif;
     font-weight: 700;
@@ -48,7 +48,7 @@
   /*project container and project box desigining*/
   
   .project-container {
-    width: 80vw;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     padding: 2rem 4rem;
