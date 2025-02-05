@@ -47,8 +47,9 @@ footer {
   }
   
   .contact-left textarea{
-    width: 35rem;
-    height: 200px;
+    min-width: 35rem;
+    max-width: 35rem;
+    min-height: 200px;
     padding-top: 15px;
     border-radius: 10px;
   }
