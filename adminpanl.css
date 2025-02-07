@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #292A2D;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 12%;
+    background-color: #212327;
+    color: #f1f1e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #ecf0f1;
+}
+
+.nav-links {
+    list-style: none;
+    width: 100%;
+}
+
+.nav-links li {
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li.active {
+    background-color: #4D6BFE;
+}
+
+.nav-links li:hover {
+    border-radius: 10px;
+    background-color: #494949;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #f1f1e6;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a i {
+    margin-right: 10px;
+}
+
+.nav-links a span {
+    font-size: 18px;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #292A2D;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    color: #f1f1e6;
+}
+
+.main-content p {
+    color: #f1f1e6;
+}

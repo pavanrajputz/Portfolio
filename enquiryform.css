@@ -36,7 +36,6 @@
     /* align-items: center; */
     justify-content: center;
     text-align: center;
-    border: 2px solid red;
   
   }
   .form-area {
@@ -60,15 +59,8 @@
     color: #2b2a2a;
     font-weight: 900;
     font-size: 2.5em;
-    /* border: 2px solid red; */
-    /* margin-top: 20px;
-    margin-bottom: -5px; */
   }
-
-  .form-area form{
-    /* display: none; */
-  }
-
+  
   .input-field {
       position: relative;
       width: 100%;
