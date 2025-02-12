@@ -3,51 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
+    <title>Admin panel</title>
     <link rel="stylesheet" href="adminpanl.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">
-            <h2>Devigo</h2>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="#">
-                    <i class="fas fa-home"></i>
-                    <span>Dashboard</span>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="" alt="logo">
+                    <h2>DEV<span>IGO</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons">
+                        close
+                        </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons">
+                        dashboard
+                        </span>
+                    <h3>Dashboard</h3>
                 </a>
-            </li>
-            <li>
                 <a href="#">
-                    <i class="fas fa-users"></i>
-                    <span>Users</span>
+                    <span class="material-icons">
+                        shopping_cart
+                        </span>
+                    <h3>Orders</h3>
                 </a>
-            </li>
-            <li>
                 <a href="#">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Analytics</span>
+                    <span class="material-icons">
+                        chat
+                        </span>
+                    <h3>Messages</h3>
+                    <span class="mssg-count">20</span>
                 </a>
-            </li>
-            <li>
                 <a href="#">
-                    <i class="fas fa-cog"></i>
-                    <span>Settings</span>
+                    <span class="material-icons">
+                        contact_mail
+                        </span>
+                    <h3>Contact</h3>
                 </a>
-            </li>
-            <li>
                 <a href="#">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span>Logout</span>
+                    <span class="material-icons">
+                        reviews
+                        </span>
+                    <h3>Reviews</h3>
                 </a>
-            </li>
-        </ul>
-    </div>
-    <div class="main-content">
-        <h1>Welcome to the Admin Panel</h1>
-        <p>This is the main content area.</p>
+                <a href="#">
+                    <span class="material-icons">
+                        quiz
+                        </span>
+                    <h3>FAQ</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">
+                        logout
+                        </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="visits">
+                    <span class="material-icons">
+                        preview
+                        </span> 
+                    <div class="middle">
+                        <div class="left">  
+                            <h3>Total Visits</h3>    
+                            <h1>25,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <!-- End of sales  -->
+                <div class="ordrs">
+                    <span class="material-icons">
+                        shopping_cart
+                        </span>
+                    <div class="middle">
+                        <div class="left">  
+                            <h3>Total Orders</h3>    
+                            <h1>650</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <!-- End of orders  -->
+                <div class="earnings">
+                    <span class="material-icons">
+                        currency_rupee
+                        </span> 
+                    <div class="middle">
+                        <div class="left">  
+                            <h3>Total Earning</h3>    
+                            <h1>25,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <!-- End of earnings  -->
+            </div>
+        </main>           
     </div>
 </body>
 </html>

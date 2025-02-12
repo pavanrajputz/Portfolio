@@ -1,7 +1,7 @@
 .showcase {
     display: flex;
     min-height: 900px;
-    width: 99.5%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
